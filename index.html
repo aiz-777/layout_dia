@@ -1,19 +1,290 @@
+<!-- #region head -->
 <!doctype html>
-<html lang="en">
+<html class="page" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Dia</title>
+    <title>Strategic Agency</title>
     <link
       rel="stylesheet"
       href="src/styles/main.scss"
     />
+    <link rel="icon" href="src/images/logo/air-logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"
+      crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <script
+      src="src/scripts/main.js"
+      defer
+    ></script>
   </head>
-  <body>
-    <h1>Dia</h1>
-    <script src="src/scripts/main.js"></script>
+  <!-- #endregion head -->
+  <body class="page__body">
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="top-bar" id="top">
+            <a class="top-bar__logo-link" href="#">
+              <img
+                class="top-bar__logo"
+                src="src/images/logo/air-logo.svg"
+                alt="Air-logo"
+                >
+            </a>
+
+            <div class="top-bar__icon">
+              <a href="#menu" class="icon icon--menu"></a>
+            </div>
+
+            <nav class="nav top-bar__nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#about-us">About us</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#services">Services</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#contact-us">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+
+            <a class="top-bar__link" href="#contact-us">Hire us</a>
+          </div>
+
+          <div class="header__bottom">
+            <div class="header__text">
+              <h1 class="header__title">Strategic Agency</h1>
+              <p class="header__description">We believe in the power of bold ideas that can solve business challenges.</p>
+              <div class="button header__button">
+                <a class="button__link" href="#our-expertise">Learn more</a>
+              </div>
+            </div>
+
+            <div class="header__visual">
+              <div class="header__photo header__photo--slide-1"></div>
+              <div class="header__slider">
+                <div class="header__slider-buttons">
+                  <button
+                    type="button"
+                    class="header__slider-button header__slider-button--prev"
+                    aria-label="Previous slide"
+                  >
+                  </button>
+                  <button
+                    type="button"
+                    class="header__slider-button header__slider-button--next"
+                    aria-label="Next slide"
+                  >
+                  </button>
+                </div>
+                <div class="header__slider-text">
+                  <div class="header__slider-title">Intro</div>
+                  <div class="header__slider-description">By the same illusion which lifts the horizon.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <aside class="menu page__menu" id="menu">
+      <div class="container">
+        <div class="top-bar menu__top-bar">
+          <a class="top-bar__logo-link" href="#">
+            <img
+              class="top-bar__logo"
+              src="src/images/logo/air-logo.svg"
+              alt="Air-logo"
+            >
+          </a>
+
+          <div class="top-bar__icon menu__icon">
+            <a href="#" class="menu__close icon icon--close"></a>
+          </div>
+        </div>
+
+        <nav class="nav menu__nav">
+          <ul class="nav__list nav__list--menu">
+            <li class="nav__item">
+              <a class="nav__link nav__link--menu" href="#about-us">About us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--menu" href="#top">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--menu" href="#our-expertise">Work</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--menu" href="#services">Services</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--menu" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--menu" href="#contact-us">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="tel:654 321 987" class="menu__phone-number">654 321 987</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="main__content">
+        <section class="who-we-are main__who-we-are" id="about-us">
+          <div class="container">
+            <h2
+              class="
+                section-title
+                section-title--who-we-are
+                who-we-are__title
+              "
+            >
+              Who we are
+            </h2>
+            <div class="who-we-are__content">
+              <p class="who-we-are__description">
+                We embrace a strategic approach to creative ideas. We are interested in people and human relationships.
+                This is the main thing you need to know about us. We believe in the power of bold ideas that can solve business challenges.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="expertise main__expertise" id="our-expertise">
+          <div class="container">
+            <h2 class="section-title section-title--expertise">
+              Our expertise
+            </h2>
+            <div class="expertise__cards">
+              <article class="expertise-card expertise__card">
+                <img
+                  src="src/images/expertise/branding.png"
+                  alt="Branding"
+                  class="expertise-card__photo"
+                >
+                <h3 class="expertise-card__title">Branding</h3>
+                <p class="expertise-card__description">
+                  We create additional value for companies, products, services
+                  as well as verbal and visual ways to deliver it to the audience.
+                </p>
+              </article>
+
+              <article class="expertise-card expertise__card">
+                <img
+                  src="src/images/expertise/communication.png"
+                  alt="Communication"
+                  class="expertise-card__photo"
+                >
+                <h3 class="expertise-card__title">Communication</h3>
+                <p class="expertise-card__description">
+                  We strive to create communications that can increase media performance.
+                  We use everything &mdash; words, meanings, stories, art, movies.
+                </p>
+              </article>
+
+              <article class="expertise-card expertise__card">
+                <img
+                  src="src/images/expertise/strategy.png"
+                  alt="Strategy"
+                  class="expertise-card__photo"
+                >
+                <h3 class="expertise-card__title">Strategy</h3>
+                <p class="expertise-card__description">
+                  We create business growth strategies, from the moment of its
+                  birth to the achievement of the necessary business indicators.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="process main__process" id="services">
+          <div class="container">
+            <div class="process__content">
+              <div class="process__text">
+                <p class="process__label">Services</p>
+                
+                <h2 class="section-title section-title--process process__title">Air is a full service creative agency</h2>
+
+                <div class="process__description">
+                  <p class="process__description-paragraph">
+                    Deep analytics, strong strategy and bright creative ideas.
+                  </p>
+                  <p class="process__description-paragraph">
+                    We are sure that first-rate job is possible only if all three components are united.
+                  </p>
+                </div>
+              </div>
+              <div class="process__cards">
+                <article class="process-card process__card process__card--left">
+                  <span class="process-card__number">001</span>
+                  <ul class="process-card__list">
+                    <li class="process-card__item">Brand Development</li>
+                    <li class="process-card__item">Copywriting</li>
+                    <li class="process-card__item">Logo &amp; Website Design</li>
+                    <li class="process-card__item">Packaging</li>
+                  </ul>
+                  <a href="#our-expertise" class="process-card__link">
+                    <span class="process-card__link-icon"></span>
+                    <span class="process-card__link-text">Learn more</span>
+                  </a>
+                </article>
+                <article class="process-card process__card process__card--right">
+                  <span class="process-card__number">002</span>
+                  <ul class="process-card__list">
+                    <li class="process-card__item">Content Production</li>
+                    <li class="process-card__item">Graphic Design</li>
+                    <li class="process-card__item">Video Production</li>
+                    <li class="process-card__item">Post Production</li>
+                  </ul>
+                  <a href="#our-expertise" class="process-card__link">
+                    <span class="process-card__link-icon"></span>
+                    <span class="process-card__link-text">Learn more</span>
+                  </a>
+                </article>
+                <article class="process-card process__card process__card--left">
+                  <span class="process-card__number">003</span>
+                  <ul class="process-card__list">
+                    <li class="process-card__item">Marketing Strategy</li>
+                    <li class="process-card__item">Email Marketing</li>
+                    <li class="process-card__item">Paid Advertising</li>
+                    <li class="process-card__item">Blog Content &amp; SEO</li>
+                  </ul>
+                  <a href="#our-expertise" class="process-card__link">
+                    <span class="process-card__link-icon"></span>
+                    <span class="process-card__link-text">Learn more</span>
+                  </a>
+                </article>
+                <article class="process-card process__card process__card--right">
+                  <span class="process-card__number">004</span>
+                  <ul class="process-card__list">
+                    <li class="process-card__item">Digital Communications</li>
+                    <li class="process-card__item">Influencer Marketing</li>
+                    <li class="process-card__item">Product Placements</li>
+                    <li class="process-card__item">Strategic Partnerships</li>
+                  </ul>
+                  <a href="#our-expertise" class="process-card__link">
+                    <span class="process-card__link-icon"></span>
+                    <span class="process-card__link-text">Learn more</span>
+                  </a>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
   </body>
 </html>

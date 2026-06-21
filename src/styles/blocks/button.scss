@@ -1,0 +1,50 @@
+.button {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  min-height: 50px;
+  margin: 0;
+  border: none;
+  border-radius: 8px;
+
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 100%;
+  text-align: center;
+
+  background-color: $button-bg-color;
+
+  transition: background-color $effectDuration;
+
+  &:hover {
+    background-color: $button-bg-hover-color;
+    box-shadow: 1px 4px 16px rgba(80, 90, 110, 0.4);
+  }
+
+  &:focus-within {
+    background-color: $button-bg-hover-color;
+    box-shadow: 1px 4px 16px rgba(80, 90, 110, 0.4);
+  }
+
+  &:active {
+    background-color: $button-bg-active-color;
+    box-shadow: 1px 4px 16px rgba(95, 105, 150, 0.64);
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: inherit;
+
+    color: $main-text-page;
+    text-decoration: none;
+  }
+}
