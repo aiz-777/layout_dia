@@ -5,6 +5,15 @@
   }
 }
 
+@mixin hover-effects {
+  transition:
+    box-shadow $effectDuration,
+    transform $effectDuration;
+  &:hover {
+    @content;
+  }
+}
+
 @mixin on-tablet {
   @media (min-width: $tablet-min-width) {
     @content;

@@ -49,13 +49,11 @@
 
     object-fit: cover;
 
-    transition: transform $effectDuration;
-
     @include on-desktop {
       margin-bottom: 40px;
     }
 
-    &:hover {
+    @include hover-effects {
       transform: scale(1.05);
       box-shadow: 4px 4px 9px rgba(37, 41, 49, 0.5);
     }

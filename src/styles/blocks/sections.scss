@@ -43,4 +43,20 @@
       margin-bottom: 148px;
     }
   }
+
+  &__testimonials {
+    margin-bottom: 120px;
+
+    @include on-tablet {
+      margin-bottom: 148px;
+    }
+
+    @include on-desktop {
+      margin-bottom: 186px;
+    }
+
+    @include on-large-desktop {
+      margin-bottom: 148px;
+    }
+  }
 }
