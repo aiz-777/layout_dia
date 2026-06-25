@@ -23,17 +23,17 @@
 
   &:hover {
     background-color: $button-bg-hover-color;
-    box-shadow: 1px 4px 16px rgba(80, 90, 110, 0.4);
+    box-shadow: 1px 0 12px rgba(207, 209, 212, 0.4);
   }
 
   &:focus-within {
     background-color: $button-bg-hover-color;
-    box-shadow: 1px 4px 16px rgba(80, 90, 110, 0.4);
+    box-shadow: 1px 0 16px rgba(207, 209, 212, 0.4);
   }
 
   &:active {
     background-color: $button-bg-active-color;
-    box-shadow: 1px 4px 16px rgba(95, 105, 150, 0.64);
+    box-shadow: 1px 0 16px rgba(207, 209, 212, 0.64);
   }
 
   &__link {
