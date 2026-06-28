@@ -1,4 +1,5 @@
 $header-bg-color: #2c2c2c;
+$footer-bg-color: #2c2c2c;
 $main-text-page: #fff;
 $page-bg-color: #f2f6fa;
 $button-bg-color: #2060f6;
@@ -16,7 +17,10 @@ $testimonials-label-color: #c0cdd7;
 $card-number-color: #2060f6;
 $card-link-bg-color: #2060f6;
 $card-link-text-color: #334563;
-$effectDuration: 0.5s;
+$placeholder-color-text: rgba($main-text-page, 0.7);
+$placeholder-hv-color-text: rgba($main-text-page, 0.4);
+$contacts-label-color-text: rgba($main-text-page, 0.5);
+$effectDuration: 1s;
 $mobile-min-width: 320px;
 $tablet-min-width: 640px;
 $desktop-min-width: 1024px;

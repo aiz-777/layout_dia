@@ -15,6 +15,7 @@
   font-size: 15px;
   font-weight: 600;
   line-height: 100%;
+  color: $main-text-page;
   text-align: center;
 
   background-color: $button-bg-color;
@@ -22,18 +23,20 @@
   transition: background-color $effectDuration;
 
   &:hover {
+    transform: translateY(-1px);
     background-color: $button-bg-hover-color;
-    box-shadow: 1px 0 12px rgba(207, 209, 212, 0.4);
+    box-shadow: 0 7px 20px rgba(32, 96, 246, 0.32);
   }
 
   &:focus-within {
     background-color: $button-bg-hover-color;
-    box-shadow: 1px 0 16px rgba(207, 209, 212, 0.4);
+    box-shadow: 0 0 0 3px rgba(32, 96, 246, 0.28);
   }
 
   &:active {
+    transform: translateY(0);
     background-color: $button-bg-active-color;
-    box-shadow: 1px 0 16px rgba(207, 209, 212, 0.64);
+    box-shadow: 0 4px 12px rgba(32, 96, 246, 0.24);
   }
 
   &__link {
