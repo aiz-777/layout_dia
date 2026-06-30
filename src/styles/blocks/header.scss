@@ -19,12 +19,25 @@
 
   &__text {
     grid-column: 1 / -1;
+    animation: header-text 1.5s ease-out both;
 
     @include page-grid;
 
     @include on-desktop {
       display: block;
       grid-column: 1 / 6;
+    }
+
+    @keyframes header-text {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
     }
   }
 

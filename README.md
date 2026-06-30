@@ -16,7 +16,7 @@ Single-page landing page for a strtegic agency.
 - [Figma design](https://www.figma.com/file/7qwsWggv9BAxMi2VPhBuPr/Air-(formerly-Dia)?node-id=9138%3A35)
 - [DEMO LINK](https://aiz-777.github.io/layout_dia/)
 
-### How to Run
+## How to Run
 
 - Clone the repository
 - Run npm install to install dependencies
