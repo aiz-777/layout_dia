@@ -17,12 +17,13 @@
 
     position: fixed;
     z-index: 3;
-    top:0;
+    top: 0;
     bottom: 0;
     left: 0;
     transform: translateY(-100%);
 
     width: 100dvw;
+
     visibility: hidden;
     opacity: 0;
 
@@ -33,7 +34,9 @@
 
     &:target {
       pointer-events: all;
+
       transform: translateY(0);
+
       visibility: visible;
       opacity: 1;
 
