@@ -28,7 +28,6 @@
     opacity: 0;
 
     transition:
-      opacity $effectDuration,
       transform $effectDuration,
       visibility 0s $effectDuration;
 
@@ -41,7 +40,6 @@
       opacity: 1;
 
       transition:
-        opacity $effectDuration,
         transform $effectDuration;
     }
   }
