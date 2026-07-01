@@ -1,16 +1,8 @@
 .menu {
   overflow: auto;
-
   box-sizing: border-box;
-  height: 100vh;
-
   color: $menu-text-color;
-
   background-color: $menu-bg-color;
-
-  &__close {
-    height: 18px;
-  }
 
   &__top-bar {
     position: sticky;
@@ -25,12 +17,14 @@
   }
 
   &__icon {
-    margin: 0;
-    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    @include on-desktop {
-      display: block;
-    }
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
   }
 
   &__nav {
