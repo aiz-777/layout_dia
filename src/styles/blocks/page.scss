@@ -25,7 +25,6 @@
     width: 100dvw;
 
     visibility: hidden;
-    opacity: 0;
 
     transition:
       transform $effectDuration,
@@ -33,14 +32,9 @@
 
     &:target {
       pointer-events: all;
-
       transform: translateY(0);
-
       visibility: visible;
-      opacity: 1;
-
-      transition:
-        transform $effectDuration;
+      transition: transform $effectDuration;
     }
   }
 
