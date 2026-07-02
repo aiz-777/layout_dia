@@ -25,6 +25,7 @@
     width: 100dvw;
 
     visibility: hidden;
+    background-color: $menu-bg-color;
 
     transition:
       transform $effectDuration,
