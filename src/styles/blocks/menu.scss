@@ -1,7 +1,17 @@
 .menu {
-  overflow: auto;
   box-sizing: border-box;
   color: $menu-text-color;
+
+  &__container {
+    transform: translateY(-100%);
+    min-height: 100%;
+    background-color: $menu-bg-color;
+    transition: transform $effectDuration;
+  }
+
+  &:target &__container {
+    transform: translateY(0);
+  }
 
   &__top-bar {
     position: sticky;
