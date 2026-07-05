@@ -46,6 +46,14 @@
     }
   }
 
+  &__input:autofill {
+    outline: none;
+    box-shadow: 0 0 0 1000px $footer-bg-color inset;
+    caret-color: $main-text-page;
+
+    -webkit-text-fill-color: $main-text-page;
+  }
+
   &__textarea {
     resize: none;
     margin-bottom: 56px;

@@ -1,5 +1,6 @@
 .page {
   scroll-behavior: smooth;
+  overflow-x: hidden;
   color: $main-text-page;
 
   &:has(.page__menu:target) {
@@ -7,6 +8,7 @@
   }
 
   &__body {
+    overflow-x: hidden;
     min-width: $mobile-min-width;
     margin: 0;
     background-color: $page-bg-color;
